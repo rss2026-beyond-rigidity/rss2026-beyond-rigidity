@@ -1,0 +1,30 @@
+<h2 class="section-title">{{ .titles.organizers }}</h2>
+
+<ul class="organizer-list">
+    {{ range $organizer := (where .organizers "type" "ne" nil) }}
+    <li class="organizer-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        {{ with .photo }}
+
+        <span class="organizer-photo">
+            <img class="photo" src="{{ . }}" alt="{{ $organizer.name }}" itemprop="image">
+        </span>
+        {{ end }}
+
+        <h3 class="organizer-name">
+            {{ with $organizer.url }}
+                <a class="organizer-name-url" href="{{ $organizer.url }}" target="_blank" title="{{ $organizer.name }}"> {{ $organizer.name }}</a>
+            {{ else }}
+                {{ .name }}
+            {{ end }}
+            {{ with .email }}
+            <a href="mailto:{{ $organizer.email }}" title="Personal Site">
+                <i class="mail fa fa-envelope" aria-hidden="true"> </i>
+            </a>
+            {{ end }}
+        </h3>
+        <h3 class="organizer-university">{{ .university }}
+        </h3>
+
+    </li>
+    {{ end }}
+</ul>

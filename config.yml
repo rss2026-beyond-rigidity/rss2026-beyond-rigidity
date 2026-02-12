@@ -1,0 +1,170 @@
+baseurl: "https://rss2026-beyond-rigidity.github.io/"
+title: "Beyond Rigidity"
+canonifyurls: true
+theme: "hugo-conference"
+
+GoogleAnalytics: ""
+
+params:
+  # Conference info
+  Name: "Beyond Rigidity - Deformable and Articulated Robotic Object Manipulation Workshop"
+  ShortName: "Beyond Rigidity @ RSS'26"
+  Description: ""
+  # Description: "Have we Solved the Perception Problem for Robots?"
+  Date: "TBD July 13th or 17th 2026"
+  Location: "International Convention Center and University of Technology Sydney"
+  Venue: ""
+  Address: ""
+  City:  "Sydney"
+  State: "Australia"
+  Images: ["/img/RSS2026-logo.png"]
+  # GoogleMapsKey: "my-secret-maps-key"
+
+  # Active sections on the website to deactivate comment out with '#'
+  # you can also change order here and it will reflect on page
+  Sections:
+    - about
+    - speakers
+    - schedule
+    # - papers
+    - submission
+    - dates
+    - organizers
+
+  # Titles which you can translate to other languages
+  Titles:
+    about: "Overview"
+    speakers: "Speakers"
+    schedule: "Schedule"
+    # papers: "Access Papers"
+    submission: "Call for Papers"
+    dates: "Important Dates"
+    organizers: "Organizers"
+
+  # The Call To Action button at the header,
+  # If you don't want this, just remove the callToAction property.
+  # CallToAction:
+  #   text: "Register now!"
+  #   link: "http://register.example.com"
+
+  # List of Sponsors
+  Speakers:
+    - name: "Hugo"
+      logo: "/img/hugo.png"
+      url: "http://gohugo.io"
+
+  # The entire schedule
+  Schedule:
+    - name: "Opening Remarks by the Workshop Organizers"
+      time: "8:50"
+
+    - name: "Jeannette Bohg"
+      photo: "/img/tbd.jpg" #"/img/bohg.png"
+      bio: "She is an Assistant Professor of Computer Science at Stanford University and director of the Interactive Perception and Robot Learning Lab. My research asks two central questions: What are the principles underlying robust sensorimotor coordination in humans, and how can we implement them in robots? Addressing these questions requires working at the intersection of robotics, machine learning, and computer vision. In my lab, we focus particularly on robotic grasping and manipulation."
+      company: "Stanford University"
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "TBD" 
+        description: "TODO Talk Description"
+        time: "9:00"
+
+    - name: "Niko Suenderhauf"
+      photo: "/img/tbd.jpg" #"/img/niko2021.png"
+      bio: "He is a Professor at Queensland University of Technology (QUT) in Brisbane and Deputy Director of the QUT Centre for Robotics, where I lead the Visual Understanding and Learning Program. I am also Deputy Director (Research) for the ARC Research Hub in Intelligent Robotic Systems for Real-Time Asset Management (2022-2027) and was Chief Investigator of the Australian Centre for Robotic Vision 2017-2020. I conduct research in robotic vision and robot learning, at the intersection of robotics, computer vision, and machine learning. My research interests focus on robotic learning for manipulation, interaction and navigation, scene understanding, and the reliability of deep learning for open-set and open-world conditions."
+      company: "Queensland University of Technology"
+      link:
+        href: ""
+        text: ""
+      presentation:
+        title: "TBD"
+        description: "TODO Talk Description"
+        time: "9:40"
+
+    - name: "Coffee Break and Poster Session"
+      time: "10:20"
+
+    - name: "Siyuan Huang"
+      photo: "/img/tbd.jpg" #"/img/siyuan.png"
+      bio: "He is a Research Scientist at the Beijing Institute for General Artificial Intelligence (BIGAI), directing the Embodied Robotics Center and BIGAI-Unitree Joint Lab of Embodied AI and Humanoid Robot. He received his Ph.D. from the Department of Statistics at the University of California, Los Angeles (UCLA). His research aims to build a general agent capable of understanding and interacting with 3D environments like humans. To achieve this, his work made contributions in (i) developing scalable and hierarchical representations for 3D reconstruction and semantic grounding, (ii) modeling and imitating human interactions with 3D world, and (iii) building robots proficient in interactions within the 3D world and with humans."
+      company: "Beijing Institute for General Artificial Intelligence"
+      presentation:
+        title: "TBD"
+        description: "TODO Talk Description"
+        time: "11:00"
+
+    - name: "Speaker 4 - TDB"
+      photo: "/img/tbd.jpg"
+      bio: ""
+      company: ""
+      presentation:
+        title: "TBD"
+        description: "TODO Talk Description"
+        time: "11:00"
+
+    - name: "Roundtable Discussion"
+      time: "12:20"
+
+    - name: "Closing Remarks"
+      time: "12:50"
+
+  Organizers:
+    - name: "Leonard Klüpfel"
+      photo: "/img/lk.jpg"
+      university: "German Aerospace Center (DLR)"
+      url: ""
+      email: "leonard.kluepfel@dlr.de"
+      type: "co"
+
+
+    - name: "Júlia Borràs Sol"
+      photo: "/img/jborras.jpeg"
+      university: "Institut de Robòtica i Informàtica Industrial, CSIC-UPC"
+      url: "https://www.iri.upc.edu/people/jborras/"
+      email: "jborras@iri.upc.edu"
+      type: "co"
+
+    - name: "David Blanco-Mulero"
+      photo: "/img/DBM_profile.png"
+      university: "Institut de Robòtica i Informàtica Industrial, CSIC-UPC"
+      url: "https://dblanm.github.io/"
+      email: "david.blanco.mulero@upc.edu"
+      type: "co"
+
+    - name: "Alberta Longhini"
+      photo: "/img/alberta.jpg"
+      university: "Stanford University"
+      url: "https://albilo17.github.io/"
+      email: "alberta@stanford.edu "
+      type: "co"
+
+    - name: "Andrej Gams"
+      photo: "/img/andrej.jpeg"
+      university: "Jozef Stefan Institute"
+      url: "https://andrejgams.ijs.si/"
+      email: "andrej.gams@ijs.si"
+      type: "co"
+
+    - name: "Maximilian Durner"
+      photo: "/img/durner.jpg"
+      university: "German Aerospace Center (DLR)"
+      url: "https://madurner.github.io/"
+      email: "maximilian.durner@dlr.de"
+      type: "co"
+
+    - name: "Rudolph Triebel"
+      photo: "/img/triebel.jpg"
+      university: "German Aerospace Center (DLR), Karlsruhe Institute of Technology (KIT)"
+      url: "https://www.dlr.de/en/blog/authors/rudolph-triebel"
+      email: "rudolph.triebel@dlr.de"
+      type: "co"
+
+
+  Submission:
+    topics:
+      - name: "Perception: How can robots perceive non-rigid objects using cameras and other multimodal sensors (e.g., tactile, force, and proprioception)?"
+      - name: "Representation: How can non-rigid objects be represented; do we learn or deploy model-based representations; how to balance detail and precision with computational complexity?"
+      - name: "Modelling and planning: How can we model and integrate non-rigid object dynamics into planning; what role do world models play in non-rigid object manipulation? "
+      - name: "Approaches: What are the advantages and shortcoming of different paradigms for manipulation; with particular emphasis on end-to-end and modular ones?"
+      - name: "Evaluation and Benchmarks: How to best measure progress; what are common benchmarks, datasets and metrics for manipulating non-rigid objects?"

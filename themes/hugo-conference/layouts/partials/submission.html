@@ -1,0 +1,16 @@
+<h2 class="section-title">{{ .Titles.submission }}</h2>
+<p style=margin-bottom:0.5em>We invite the submission of field reports or extended abstracts on the following topics of interest:</p>
+<ul class="listing">
+  {{ range .Submission.topics }}
+    {{ $parts := split .name ":" }}
+    <li>
+      - <strong>{{ index $parts 0 }}</strong>: {{ delimit (after 1 $parts) ":" }}
+    </li>
+  {{ end }}
+</ul>
+<p style=margin-bottom:0.5em> All submitted papers will be reviewed on the basis of technical quality, relevance, significance, and clarity. The page limit of submitted papers is 4 pages including references. We also accept submissions of previously presented work, that you have extended on and work that is being published as part of the RSS 2026 main conference. Upon acceptance, you will be able to present your submission as part of the poster session. All accepted submissions will be available for the workshop on this website (non archival).</p>
+<p style=margin-bottom:0.5em>Please submit your extended abstracts following the RSS 2026 format guidelines. For details see the following link:</p>
+<ul class="listing">
+    <li> - <a href="https://roboticsconference.org/information/cfp/#paper-format">Format Guidelines</a></li>
+</ul>
+<p>Please send your submission to <a href="mailto:tbd">TBD</a>.</p>
