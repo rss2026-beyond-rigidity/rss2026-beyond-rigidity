@@ -1,0 +1,52 @@
+# Beyond Rigidity Workshop
+
+Hugo based static webpage. Based on [hugo-conference](https://github.com/jweslley/hugo-conference). 
+
+The website is available at
+
+[https://rss2026-beyond-rigidity.github.io](https://rss2026-beyond-rigidity.github.io)
+
+## TODO
+
+- [x] Change urls
+- [x] Add speaker links to webpage from name and image
+- [ ] Add submission details
+- [x] Add description for speaker bios
+- [ ] Add talk descriptions
+- [x] Add contact mail button for organizers
+- [x] Customize organizer list
+- [ ] Better Overview Text
+
+## Building using hugo
+
+1. Install [Hugo](https://gohugo.io)
+2. Clone this project:
+
+        git clone https://github.com/rss2026-beyond-rigidity/rss2026-beyond-rigidity.github.io
+        cd rss2026-beyond-rigidity.github.io
+
+3. It's done. Just start Hugo server to see it live!
+
+        hugo server --watch
+
+and then see the result at [http://localhost:1313/](http://localhost:1313/)
+
+## Customizing the workshop site
+
+Most of the site information can be found in the `config.yml` file. Just edit it to make changes.
+By default, the site have the following sections:
+
+- About - to describe what's the main goal of the workshop
+- Speakers - to list information about speakers.
+- Schedule - to show the agenda.
+- Organizer - list of organizers
+
+Ps: It's important to change the `baseurl` property from `config.yml` file in order to reflect your settings.
+
+New images go into the static/img folder. 
+
+Other content, for example the About section, is located at [.themes/hugo-conference/layouts/partials/about.html](.themes/hugo-conference/layouts/partials/about.html).
+
+## License
+
+MIT, see [LICENSE](https://github.com/jweslley/hugo-conference/blob/master/LICENSE).
